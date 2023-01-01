@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#4e48b2"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/stevejobs"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#68CCE8"
+
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/imgQ"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_left_quote"
+        android:layout_below="@id/circleImg"
+        />
+
+
+    <TextView
+        android:id="@+id/quoteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgQ"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:padding="15dp"
+
+        android:text="Design is not just what it looks like and feels like. Design is how it works."
+        android:textAlignment="center"
+
+        android:textColor="#fff"
+        android:textSize="28sp"
+
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nextCircleImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_right"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#68CCE8"
+
+        android:layout_centerHorizontal="true"
+
+
+
+        android:layout_margin="20dp"
+        android:layout_above="@id/adView"
+
+
+        />
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>
